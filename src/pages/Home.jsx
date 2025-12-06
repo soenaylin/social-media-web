@@ -46,7 +46,7 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const data = await getPosts();
-      console.log(data);
+    //   console.log(data);
       if (!data) console.log("Fetch error");
 
       setPosts(data);
