@@ -117,7 +117,7 @@ export default function Profile() {
     useEffect(() => {
     (async () => {
       const data = await fetchUser(id);
-      console.log(data);
+    //   console.log(data);
       setPosts(data.posts);
       setUser(data.user);
 

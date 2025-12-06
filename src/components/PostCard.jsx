@@ -32,7 +32,7 @@ export default function PostCard({ post, primary, like, unlike }) {
     if (!post.likes) return false;
 
     // console.log(post.likes);
-    post.likes.map(like => console.log(like));
+    // post.likes.map(like => console.log(like));
 
     return post.likes.find((like) => {
     //   console.log(like._id);

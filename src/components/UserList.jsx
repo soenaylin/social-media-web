@@ -43,7 +43,7 @@ export default function UserList({ users }) {
 
 export function FollowButton({ user }) {
   const { auth, setAuth } = useApp();
-  console.log(auth);
+//   console.log(auth);
 
   const [followed, setFollowed] = useState(
     auth.following && auth.following.includes(user._id)
@@ -64,9 +64,9 @@ export function FollowButton({ user }) {
           );
           setAuth({ ...auth });
           putUnfollow(user._id);
-          console.log(user._id);
+        //   console.log(user._id);
         } else {
-          console.log(user._id);
+        //   console.log(user._id);
           auth.following = [];
           auth.following.push(user._id);
           setAuth({ ...auth });

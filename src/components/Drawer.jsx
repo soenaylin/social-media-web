@@ -24,7 +24,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function AppDrawer() {
   const { drawer, setDrawer, auth, setAuth } = useApp();
-  {console.log(auth)}
+//   {console.log(auth)}
   const navigate = useNavigate();
 
   const images = import.meta.env.VITE_IMAGES_URL;
